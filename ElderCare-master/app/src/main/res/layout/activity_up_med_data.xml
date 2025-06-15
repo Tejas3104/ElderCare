@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpMedData"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/black"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/eldercare11"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/docname1"
+        android:layout_width="287dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:hint="@string/name_of_the_doctor_1"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="289dp"
+        android:layout_height="53dp"
+        android:text="@string/upload_medical_data"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button8"-->
+    <!--        android:layout_width="151dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:text="@string/add_doctor"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:background="@color/black"-->
+    <!--        android:backgroundTint="@color/black"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/subbutton"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.551"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/button12" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/button12"-->
+    <!--        android:layout_width="163dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginBottom="20dp"-->
+    <!--        android:background="@color/black"-->
+    <!--        android:backgroundTint="@color/black"-->
+    <!--        android:text="@string/add_medicine"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:textSize="20sp"-->
+    <!--        app:layout_constraintBottom_toTopOf="@+id/subbutton"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/button8"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <EditText
+        android:id="@+id/mednametext1"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_round"
+        android:backgroundTint="#99C4C4C4"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/spinner2"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addmed1" />
+
+    <TextView
+        android:id="@+id/addmed1"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/add_medicines"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docname1" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints="number"
+        app:layout_constraintBottom_toTopOf="@+id/spinner2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toEndOf="@+id/mednametext1"
+        app:layout_constraintTop_toBottomOf="@+id/addfreq1"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:accessibilityLiveRegion="polite"
+        android:autofillHints="number"
+        app:layout_constraintBottom_toTopOf="@+id/adddoc2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toEndOf="@+id/mednametext2" />
+
+    <TextView
+        android:id="@+id/addfreq1"
+        android:layout_width="186dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/frequency_timing_n_24_hr"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/docname1" />
+
+    <EditText
+        android:id="@+id/mednametext2"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_round"
+        android:backgroundTint="#99C4C4C4"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/name1"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mednametext1" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/black"
+        android:backgroundTint="#040303"
+        app:layout_constraintBottom_toTopOf="@+id/docname1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/adddoc2"
+        android:layout_width="287dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:hint="@string/name_of_the_doctor_2"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mednametext2" />
+
+    <TextView
+        android:id="@+id/addmed2"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/add_medicines"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adddoc2" />
+
+    <TextView
+        android:id="@+id/addfreq2"
+        android:layout_width="186dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/frequency_timing_n_24_hr"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/addmed2"
+        app:layout_constraintTop_toBottomOf="@+id/adddoc2" />
+
+    <EditText
+        android:id="@+id/mednametext3"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edittext_round"
+        android:backgroundTint="#99C4C4C4"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addmed2" />
+
+    <EditText
+        android:id="@+id/mednametext4"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/edittext_round"
+        android:backgroundTint="#99C4C4C4"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mednametext3" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toEndOf="@+id/mednametext3"
+        app:layout_constraintTop_toBottomOf="@+id/addfreq2" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="198dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/mednametext4"
+        app:layout_constraintTop_toBottomOf="@+id/spinner3" />
+
+    <Button
+        android:id="@+id/subbutton"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/round_black"
+        android:drawableRight="@drawable/next"
+        android:onClick="Patho"
+        android:text="@string/next3"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

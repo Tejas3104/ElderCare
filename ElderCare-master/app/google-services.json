@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1008204800986",
+    "project_id": "eldercare-e507e",
+    "storage_bucket": "eldercare-e507e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008204800986:android:29f20cae6962ff693916e3",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008204800986-pmabctg3puu8lb2l7d3ijk2uu0tokr3e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finalproject",
+            "certificate_hash": "0f00f93d81cd00f746fa5bb1fcd52d5928092702"
+          }
+        },
+        {
+          "client_id": "1008204800986-8v1hdklccjns5r3irg2q0723vi9ne35v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZfK-_TphSai8gIQ-bHj_Y3X77iSWxNKg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008204800986-8v1hdklccjns5r3irg2q0723vi9ne35v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

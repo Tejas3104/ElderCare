@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".MySignupApp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:backgroundTint="@color/black"
+        android:background="@color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toolbar5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/eldercare6"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/signuptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email"
+        android:layout_below="@+id/toolbar5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="53dp"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTextInput1"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/layoutTextInput2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="30dp"
+        app:passwordToggleDrawable="@drawable/ic_visibility_black_18dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="325dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/edittext_round"
+            android:backgroundTint="#99C4C4C4"
+            android:drawableStart="@drawable/baseline_info_24"
+            android:drawablePadding="10dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:hint="Password"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutTextInput2"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/signupbtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="30dp"
+        app:passwordToggleDrawable="@drawable/ic_visibility_black_18dp"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/repassword"
+            android:layout_width="325dp"
+            android:layout_height="65dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/edittext_round"
+            android:backgroundTint="#99C4C4C4"
+            android:drawableStart="@drawable/baseline_info_24"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:hint="Re-enter Password"
+            android:imeOptions="actionNext"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="325dp"
+        android:layout_height="65dp"
+        android:layout_above="@+id/layoutTextInput1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:textColorHint="@color/black"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/edittext_round"
+        android:backgroundTint="#99C4C4C4"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:padding="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupbtn"
+        android:layout_width="202dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/round_black"
+        android:onClick="Medical"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layoutTextInput2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="233dp"
+        android:text="(Password should not be less than 8 characters)"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

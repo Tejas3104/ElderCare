@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/activity_navigation_drawer">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/optHome"
+            android:title="@string/home"
+            android:icon="@drawable/ic_baseline_home_24"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/optAbout"
+            android:title="@string/about"
+            android:icon="@drawable/ic_baseline_info_24"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/optServices"
+            android:title="@string/services"
+            android:icon="@drawable/ic_baseline_medical_services_24"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/optMedia"
+            android:title="@string/media"
+            android:icon="@drawable/ic_baseline_photo_camera_24"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/optGallery"
+            android:title="@string/gallery"
+            android:icon="@drawable/ic_baseline_photo_library_24"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/optContactUs"
+            android:title="@string/contact_us"
+            android:icon="@drawable/ic_baseline_phone_24"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/optAccsetting"
+            android:title="Account Settings"
+            android:icon="@drawable/baseline_manage_accounts_24" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout"
+            android:title="Logout"
+            android:icon="@drawable/logout_24" />
+    </group>
+</menu>

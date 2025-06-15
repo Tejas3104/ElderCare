@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="device_names">
+        <item>Pulse-Oxymeter</item>
+        <item>Thermometer</item>
+        <item>B. P. Machine</item>
+        <item>Glucometer</item>
+    </string-array>
+</resources>
